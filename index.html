@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Oswald:wght@300&family=Pontano+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form">
+        <div class="header">
+            <h1 id="title">Volunteer for animal rescue center application form</h1>
+            <p id="description">Please fill out this from if you are interested in becoming volunteer</p>
+        </div>
+
+      <div class="form-box">
+        <form id="survey-form">
+            <input id="name" type="text" value="Name" placeholder="Name" required></input>
+            <label for="name" id="name-label">Name</label><br />
+            <input id="email" type="email" value="E-mail" placeholder="E-mail" required></input>
+            <label for="email" id="email-label">E-mail</label><br />
+            <input id="number" type="number" value="Age" min="8" max="99" placeholder="8-99"></input>
+            <label for="number" id="number-label">Age</label>
+            <p>Volunteer work preferences</p>
+            <select id="dropdown" name="preferences">
+                <option disabled selected value> Select preferences</option>
+                <option value="cleaning">Shelter cleaning</option>
+                <option value="transport">Pet transport</option>
+                <option value="walking">Dog walking</option>
+                <option value="office">Office</option>
+                <option value="foster">Foster care</option>
+                <option value="website">Website</option>
+                <option value="events">Special events</option>
+                <option value="educational">Educational programs</option>   
+                <option value="community">Community outreach</option>       
+                <option value="other">Other</option>  
+            </select>
+            <div class="experience">
+                <p>Do you have any volunteer work experience</p>
+                <input id="radio" type="radio" name="experience" value="yes">Yes</input>
+                <input id="radio" type="radio" name="experience" value="no">No</input>
+            </div>
+            <p class="skills">Do you have any other special skills, strengths, talents (check all that apply)</p>
+            <div class="check-box">
+                <input id="check-box" type="checkbox" name="skills" value="computers">Computers</input><br />
+                <input id="check-box" type="checkbox" name="skills" value="management">Management</input><br />
+                <input id="check-box" type="checkbox" name="skills" value="crafts">crafts</input><br />
+                <input id="check-box" type="checkbox" name="skills" value="children"> Working with children</input><br />
+                <input id="check-box" type="checkbox" name="skills" value="graphic">Graphic arts</input><br />
+                <input id="check-box" type="checkbox" name="skills" value="woodworking">Woodworking</input><br />
+                <input id="check-box" type="checkbox" name="skills" value="painting">Painting</input><br />
+                <input id="check-box" type="checkbox" name="skills" value="photography">Photography</input><br />
+                <input id="check-box" type="checkbox" name="skills" value="fund">fund-raising</input><br />
+                <input id="check-box" type="checkbox" name="skills" value="speaking">Public speaking</input><br />
+                <input id="check-box" type="checkbox" name="skills" value="other">Other</input><br />
+            </div>
+            <div id="comments"><textarea id="comments" placeholder="Enter your comments here"></textarea></div><br />
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+            </div>
+        </form>
+    </div>
+</body>
